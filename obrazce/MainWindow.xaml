@@ -1,0 +1,28 @@
+﻿<Window x:Class="obrazce.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:obrazce"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="10">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Name="trojuhelnik_but"  Margin="0 0 10 0" Grid.Column="0" Content="Trojúhelník" Click="trojuhelnik_button" />
+            <Button Name="ctverec_but"  Grid.Column="1" Content="Čtverec" Click="ctverec_button" />
+            <Button Name="kruh_but" Margin="10 0 0 0" Grid.Column="2" Content="Kruh" Click="kruh_button" />
+            <Button Name="obdelnik_but" Margin="10 0 0 0" Grid.Column="3" Content="Obdélník" Click="obdelnik_button" />
+        </Grid>
+
+        <Frame NavigationUIVisibility="Hidden" x:Name="contentControl" Grid.Row="1"/>
+    </StackPanel>
+</Window>
